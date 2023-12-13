@@ -1,0 +1,167 @@
+ body {
+     background-image: url(/images/white-texture\ copy.png);
+ }
+
+ header {
+     display: flex;
+     flex-wrap: wrap;
+     border: 1px black;
+     background-color: black;
+     font-family: 'Nothing You Could Do', cursive;
+     font-size: 30px;
+ }
+
+ header h1 {
+     width: 50%;
+     height: 70px;
+     border: 1px black solid;
+ }
+
+ header nav {
+     width: 50%;
+     border: 1px black solid;
+ }
+
+ nav ul {
+     display: flex;
+     flex-direction: row;
+     justify-content: space-evenly;
+     padding-top: 10px;
+     text-shadow: 2px 2px 4px grey;
+     font-family: 'Outfit', sans-serif;
+ }
+
+ figure {
+     background-image: url(../images/panorama.png);
+     background-size: cover;
+     background-repeat: no-repeat;
+     height: 200px;
+     box-shadow: 5px 10px 10px black;
+     opacity: 0.6;
+
+ }
+
+ img {
+     width: 100%;
+     filter: grayscale(40%);
+     border-radius: 80px;
+     box-shadow: 7px 9px 10px gray
+ }
+
+ a:hover {
+     color: grey;
+ }
+
+
+ .left-side {
+     display: flex;
+     flex-wrap: wrap;
+
+ }
+
+ .left-side .title {
+     width: 10%;
+     border-right: 5px black solid;
+     text-align: right;
+     padding-right: 30px;
+     padding-top: 30px;
+     font-size: 25px;
+     text-shadow: 5px 5px 5px gray;
+
+ }
+
+ .left-side .section-container {
+     width: 88%;
+     display: flex;
+     flex-wrap: wrap;
+     justify-content: space-between;
+     padding: 30px;
+     line-height: 23px;
+     text-align: justify;
+     font-size: 20px;
+     text-shadow: 1px 1px 2px gray;
+ }
+
+ .card {
+     width: 45%;
+     position: relative;
+     margin-top: 20px;
+
+ }
+
+ .card h3 {
+     position: absolute;
+     z-index: 1;
+     bottom: 10%;
+     font-family: 'Nothing You Could Do', cursive;
+     background-color: white;
+     font-size: 30px;
+ }
+
+ .section-container ul {
+     display: flex;
+     flex-direction: row;
+     justify-content: space-evenly;
+     width: 100%;
+ }
+
+
+ #image1 {
+     position: relative;
+     margin-top: 20px;
+     width: 100%;
+     opacity: 0.4;
+ }
+
+ #image1 h3 {
+     position: absolute;
+     z-index: 1;
+     bottom: 3%;
+     left: -2%;
+     font-size: 70px;
+     background-color: white;
+     font-family: 'Nothing You Could Do', cursive;
+ }
+
+ #name {
+     color: black;
+     font-size: 100px;
+     font-family: 'Nothing You Could Do', cursive;
+     text-shadow: 3px 3px 5px white;
+ }
+
+ @media screen and (max-width: 544px) {
+     .card {
+         width: 100%;
+     }
+
+     .section-container {
+         width: 100%;
+         justify-content: center;
+     }
+
+     .left-side .title {
+         width: 100%;
+         margin: auto;
+         text-align: center;
+     }
+
+     .left-side #work {
+         justify-content: center;
+     }
+
+     header nav {
+         width: 100%;
+         font-size: 5vw;
+     }
+
+     .card h3,
+     #image1 h3 {
+         font-size: 6vw;
+     }
+
+     #contact li {
+         font-size: 3vw;
+
+     }
+ }
